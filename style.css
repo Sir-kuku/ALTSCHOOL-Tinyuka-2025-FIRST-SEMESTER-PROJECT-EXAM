@@ -43,13 +43,45 @@ body {
   transform: rotate(-100deg);
   color: green;
   transition-duration: 1s;
+  position: relative;
+  top: 4px;
+
 }
 
 .historyBtn {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 600;
   cursor: pointer;
   display: inline-block;
+}
+.history {
+  margin-top: 10px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+h3 {
+  color: #fff;
+  
+}
+.hidden {
+  display: none;
+}
+
+.history ul {
+  list-style: none;
+  padding: 0;
+}
+
+.history li {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #ccc;
+}
+
+.history-btn {
+  margin-top: 10px;
+  width: 100%;
 }
 
 /* =========================
@@ -104,7 +136,10 @@ body {
 .btn:hover {
   background-color: rgba(128, 128, 128, 0.189);
   transform: scale(1.1);
+  position: relative;
+  top: 4px;
 }
+
 
 .btn:active {
   transform: scale(1.15);
@@ -122,6 +157,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+.btn-operator:hover {
+  background-color: rgba(244, 163, 0, 0.589);
+  transform: scale(1.1);
+  position: relative;
+  top: 4px;
+}
 
 /* =========================
    EQUALS BUTTON
@@ -132,6 +173,12 @@ body {
   color: black;
   font-size: 1.9rem;
   font-weight: 700;
+}
+.btn-equals:hover {
+  background-color: rgba(211, 211, 211, 1);
+  transform: scale(1.1);
+  position: relative;
+  top: 4px;
 }
 
 /* =========================
@@ -210,7 +257,9 @@ button:active {
     font-size: 1.5rem;
   }
 
-  .historyBtn {
-    font-size: 0.9rem;
-  }
+.historyBtn {
+  font-size: 3rem;
+  font-weight: 600;
+
+}
 }
